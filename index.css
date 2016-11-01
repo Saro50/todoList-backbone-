@@ -1,0 +1,167 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.nav{
+	background-color: #333;
+	color: #fff;
+	line-height: 20px;
+	height: 20px;
+	padding: 10px;
+}
+
+.nav-wrap{
+	margin: 0px auto;
+	max-width: 600px;
+	padding: 0px 20px;
+	height: 20px;
+}
+.task-btn {
+	float: right;
+	margin-right: 5px;
+	font-size: 18px;
+	line-height: 20px;
+	height: 20px;
+	color: #fff;
+	cursor: pointer;
+}
+.main-wrap{
+	margin: 0px auto;
+	max-width: 600px;
+	z-index: 1;
+	padding: 20px;
+}
+.main-render{
+	position: relative;
+	margin: 0px;
+	margin-bottom: 20px;
+}
+.main-render button{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	margin: 0px;
+}
+.main-render .c-text{
+    font-size: 14px;
+    padding: 3px 5px;
+    line-height: 16px;
+    vertical-align: bottom;
+    margin-top: 0px;
+    padding-right: 60px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.main-title{
+	font-size: 24px;
+	color: #333;
+	margin: 20px 0px;
+}
+.remind-list{
+	list-style: none;
+}
+.remind-list .remind-acts{
+	position: absolute;
+	z-index: 1;
+	right: 0px;
+	top: 0px;
+}
+
+.remind-list li{
+	line-height: 30px;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 10px;
+    border-bottom: 1px dotted #f1f1f1;
+    padding-bottom: 10px;
+        color: #777;
+}
+button{
+	margin: 0px 5px;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	padding: 5px 10px;
+	box-shadow: inset 1px 7px 3px #d7d7d7; 
+	font-size: 12px;
+}
+.marked-list li{
+	margin-top: 10px;
+	position: relative;
+	line-height: 28px;
+	border-bottom: 1px solid #f1f1f1;
+	padding-bottom: 5px;
+	font-size: 14px;
+	color: #666;
+}
+.marked-list button{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.action-section{
+	position: relative;
+	z-index: 1;
+}
+
+.c-content{
+	padding: 10px;
+    max-height: 300px;
+    overflow: scroll;
+}
+
+.c-text{
+	font-size: 14px;
+	padding: 3px 5px;
+	line-height: 16px;
+	vertical-align: bottom;
+	margin-top: 0px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.action-section .c-text{
+	display: block;
+}
+.action-section button{
+	position: absolute;
+	right: 0px;
+	margin:0px;
+	top: 0px;
+}
+.c-mask{
+	background-color: rgba(0, 0, 0, 0.45);
+	display: block;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	z-index: 3;
+}
+.c-window{
+	margin: 20px auto;
+	margin-top: 100px;
+	min-height: 120px;
+	background-color: #fff;
+
+	border-radius: 15px;
+	max-width: 300px;
+}
+.c-title{
+	padding: 10px;
+	font-size: 18px;
+	color: #fff;
+	border-radius: 15px 15px 0px 0px;
+	background-color: #333;
+	position: relative;
+}
+.c-close{
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	font-size: 12px;
+	top: 10px;
+}
+.c-hide{
+	display: none;
+}

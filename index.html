@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>todoList</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+	<!--基础库引入-->
+	<script type="text/javascript" src='jquery-3.1.1.min.js' ></script>
+	<script type="text/javascript" src='underscore-min.js' ></script>
+	<script type="text/javascript" src='backbone-min.js' ></script>
+
+</head>
+<body >
+<div class='nav'>
+	<div class='nav-wrap' >
+		<div class='task-btn action_show' data-type='rewards' >奖励记录</div>
+		<div class='task-btn action_show' data-type='tasks'　>任务记录</div>
+	</div>
+</div>
+<div class='main-wrap' >
+	<h1 class='main-title' >任务清单</h1>
+	<div class='main-render' > <input type="text" class='c-text' id='new_task' ><button id='add_aim' >添加</button></div>
+	<ul class='remind-list' id='remind_list' >
+	</ul>
+</div>
+<div class="c-mask c-hide" id='c_records' >
+	<div class='c-window' >
+		<div class='c-title'><span id='win_title' >奖励列表</span> <div class="c-close close_win">关闭</div></div>
+		<div class='c-content'>
+			<ul class='marked-list' id='task_history_list' >
+			</ul>
+			<ul class='marked-list' id='rewards_list' >
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script type="text/js-template" id='unit_tpl' >
+	<label><%=title%></label><div class="remind-acts" ><button class='task_done'>完成</button></div>
+</script>
+
+<script type="text/js-template" id='history_tpl' >
+	<label><%=title%></label>
+</script>
+
+<!--js:concat:begin-->
+<script type="text/javascript" src='Model/model.base.js' ></script>
+<script type="text/javascript" src='Model/collection.base.js' ></script>
+
+
+<script type="text/javascript" src='View/view.item.js' ></script>
+<script type="text/javascript" src='View/view.list.js' ></script>
+<script type="text/javascript" src='View/view.historyList.js' ></script>
+
+<script type="text/javascript" src='index.js' ></script>
+<!--js:concat:end-->
+</body>
+</html>
